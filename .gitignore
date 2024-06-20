@@ -1,0 +1,6 @@
+*.ipynb
+*__pycache__*
+*results*
+data/
+*pq_data/
+*papq_data/

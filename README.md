@@ -14,5 +14,8 @@ To run HRP, install the required libraries and modules with the following comman
 
 `pip install -r requirements.txt`
 
+## Acknowledgements
+This project includes code from [LoRA](https://github.com/microsoft/LoRA), which is licensed under the [MIT License](https://github.com/microsoft/LoRA/blob/main/LICENSE.md), and code from [EPQuant](https://github.com/Lyun-Huang/EPQuant).
+
 ## Credit
 Author: Yufeng Zhang

@@ -41,7 +41,7 @@ with parameters as follows:
 python glora_dense.py --datset {dataset} --lr {learning_rate} --wd {weight_decay} --n_hidden {hidden_channels} --epoch {epochs} --batch_size {batch_size} --glora_rank {rank} --seed {seed} --save_result {save_result}
 ```
 with parameters as follows:
-- {dataset}: dataset to train on, options include Cora, Citeseer, Pubmed, Actor, Cornell, Texas, Chameleon, Squirrel
+- {dataset}: dataset to train on, options include Reddit and Flickr
 - {learning_rate}: float indicating learning rate of the model
 - {weight_decay}: float indicating weight decay of the optimizer
 - {hidden_channels}: integer indicating number of channels in the hidden layer

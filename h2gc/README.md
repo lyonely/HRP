@@ -18,9 +18,10 @@ which will run the experiments for the sparse and dense datasets respectively.
 To run the model individually, users can use the following command:
 
 ```
-python h2gc_sparse.py --lr {learning_rate} --wd {weight_decay} --n_hidden {hidden_channels} --epoch {epochs} --K {depth} --pre {preprocessing method} --n_clusters {clusters} --seed {seed} --save_result {save_result}
+python h2gc_sparse.py --dataset {dataset} --lr {learning_rate} --wd {weight_decay} --n_hidden {hidden_channels} --epoch {epochs} --K {depth} --pre {preprocessing method} --n_clusters {clusters} --seed {seed} --save_result {save_result}
 ```
 with parameters as follows:
+- {dataset}: dataset to train on, options include Cora, Citeseer, Pubmed, Actor, Texas, Cornell, Chameleon and Squirrel
 - {learning_rate}: float indicating learning rate of the model
 - {weight_decay}: float indicating weight decay of the optimizer
 - {hidden_channels}: integer indicating number of channels in the hidden layer
@@ -32,9 +33,10 @@ with parameters as follows:
 - {save_result}: boolean indicating whether to save the results in a csv file
 
 ```
-python h2gc_dense.py --lr {learning_rate} --wd {weight_decay} --n_hidden {hidden_channels} --epoch {epochs} --batch_size {batch_size} --K {depth} --pre {preprocessing method} --n_clusters {clusters} --seed {seed} --save_result {save_result}
+python h2gc_dense.py --dataset {dataset} --lr {learning_rate} --wd {weight_decay} --n_hidden {hidden_channels} --epoch {epochs} --batch_size {batch_size} --K {depth} --pre {preprocessing method} --n_clusters {clusters} --seed {seed} --save_result {save_result}
 ```
 with parameters as follows:
+- {dataset}: dataset to train on, options include Reddit and Flickr
 - {learning_rate}: float indicating learning rate of the model
 - {weight_decay}: float indicating weight decay of the optimizer
 - {hidden_channels}: integer indicating number of channels in the hidden layer
